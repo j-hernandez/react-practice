@@ -1,12 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
+import {
+    BrowserRouter as Router,
+    NavLink 
+  } from 'react-router-dom';
 export default class Footer extends Component {
     render() {
         return (
             <>
-            <nav className="navbar fixed-bottom navbar-light bg-light">
-                <a className="navbar-brand" href="#">Footer</a>
-            </nav>
+            <Router>
+                <nav className="navbar fixed-bottom navbar-light bg-light">
+                    <NavLink className="navbar-brand" to="/">Footer</NavLink>
+                </nav>
+            </Router>
             </>
         )
     }
